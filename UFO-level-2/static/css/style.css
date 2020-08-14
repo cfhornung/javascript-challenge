@@ -160,6 +160,10 @@ select {
     margin-bottom: 20px;
   }
 
+  #loadData {
+    margin: 10px 0 15px 0;
+  }
+
   #table-area tr td:last-child::after {
     display: block;
     width: 100%;

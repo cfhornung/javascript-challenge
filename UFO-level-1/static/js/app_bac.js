@@ -13,9 +13,11 @@ $(document).ready(function () {
                 }
             }
         }
-    
+
         // create table
         var table = document.createElement("table");
+
+   
 
         var tr = table.insertRow(-1);         // Rows
 
@@ -25,8 +27,11 @@ $(document).ready(function () {
             tr.appendChild(th);
         }
 
-         // Load the table
-         for (var i = 0; i < arrItems.length; i++) {
+       
+        
+        
+        // Load the table
+        for (var i = 0; i < arrItems.length; i++) {
 
             tr = table.insertRow(-1);
 
@@ -36,27 +41,9 @@ $(document).ready(function () {
             }
         }
 
- // Filter the table
- var count = table.rows.length;  
-
-for (var i=0; i<count; i++) {    
-    if (table.rows[i].cells[0].innerHTML == "1/2/2010"){
-    table.rows[i].cells[0].style.background = "#00AA00";
-  table.rows[i].cells[1].style.background  = "#00AA00";
-   table.rows[i].cells[2].style.background  = "#00AA00";
-   table.rows[i].cells[3].style.background  = "#00AA00";
-   table.rows[i].cells[4].style.background  = "#00AA00";
-   table.rows[i].cells[5].style.background  = "#00AA00";
-    table.rows[i].cells[6].style.background  = "#00AA00";
-   } else {
-}
-}
-
-
-
-
-// Pass to a container
+        // Pass to a container
         var divContainer = document.getElementById("showData");
         divContainer.innerHTML = "";
         divContainer.appendChild(table);
+
 });

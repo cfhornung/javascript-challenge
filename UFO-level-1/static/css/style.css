@@ -10,6 +10,19 @@ body {
   margin: 0;
 }
 
+table 
+{
+    width: 100%;
+    font: 17px Calibri;
+}
+table, th, td 
+{
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;
@@ -148,6 +161,10 @@ select {
 @media (max-width: 500px) {
   #table-area thead {
     display: none;
+  }
+
+  #loadData {
+    margin: 10px 0 15px 0;
   }
 
   #table-area tr td:first-child {

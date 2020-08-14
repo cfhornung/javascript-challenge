@@ -40,11 +40,11 @@
                       <ul class="list-group" id="filters">
                         <li class="filter list-group-item">
                           <label for="Date">Enter a Date</label>
-                          <input class="form-control" id="Date" type="text" placeholder="1/2/2010">
+                          <input class="form-control" id="Date" type="text" placeholder="1/11/2011">
                         </li>
                       </ul>
                     </div>
-      
+                    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
                   </form>
                 </div>
               </div>
@@ -52,14 +52,14 @@
           </div>
 
 
-        <script>
+          <script>
             document.getElementById("Date").onchange = function(){
-            var inputdate = this.value; 
-            document.getElementById("display").innerHTML = inputdate; 
-            table.rows[5].cells[6].style.background  = "#FFFF00";
-          };  
+            var input = this.value; 
+            alert(input);
+            document.getElementById("display").innerHTML = input;
+          };
+         
         </script>
-
             <p>Date Filter:</p>
              <p id="display"></p>
 
